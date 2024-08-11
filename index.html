@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="KanbanBoard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ToolBar -->
+    <div class="toolbar">
+      <!-- Priority Container -->
+      <div class="priority-cont">
+        <div class="priority-color red"></div>
+        <div class="priority-color blue"></div>
+        <div class="priority-color green"></div>
+        <div class="priority-color pink"></div>
+      </div>
+      <!-- Action Container -->
+      <div class="action-cont">
+        <div class="add-btn"><i class="fa-solid fa-plus"></i></div>
+        <div class="del-btn"><i class="fa-solid fa-trash"></i></div>
+      </div>
+    </div>
+    <!-- Main Container -->
+    <div class="main-cont">
+      <!-- Ticket Container  -->
+      <!-- <div class="ticket-cont">
+        <div class="ticket-color red"></div>
+        <div class="ticket-id">#123</div>
+        <div class="task-area">Learn HTML</div>
+        <div class="ticket-lock"></div>
+      </div> -->
+    </div>
+    <!-- Modal Container  -->
+    <div class="modal-cont">
+      <!-- Text Area  -->
+      <textarea placeholder = "Enter your task" class="textbox-area"></textarea>
+      <!-- Colour Container  -->
+        <div class="color-cont">
+        <div class="color-select red "></div>
+        <div class="color-select blue"></div>
+        <div class="color-select green"></div>
+        <div class="color-select pink active"></div>
+      </div>
+    </div>
+  </body>
+  <script src="KanbanBoard.js"></script>
+  <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+</html>
+
+

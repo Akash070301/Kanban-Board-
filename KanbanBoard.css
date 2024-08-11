@@ -1,0 +1,133 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+/* Tool Bar  */
+.toolbar{
+    height: 6rem;
+    width: 100%;
+    background-color: #012001;
+    display: flex;
+    align-items: center;
+}
+.priority-cont{
+    height: 3rem;
+    width: 20rem;
+    background-color: beige;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.priority-color{
+    height: 1.5rem;
+    width: 3rem;
+    
+}
+.red{
+    background-color: maroon;
+}
+.blue{
+    background-color: navy;
+}
+.green{
+    background-color: darkgreen;
+}
+.pink{
+    background-color: lightpink;
+}
+.action-cont{
+    height: 3rem;
+    width: 7rem;
+    background-color: beige;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.action-cont>*{
+    font-size: 1.5rem;   
+    color: #012001;
+}
+/* Ticket */
+.main-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    gap : 2rem;
+}
+.ticket-cont{
+    height: 10rem;
+    width: 15rem;
+    background-color: beige;
+    position: relative;
+}
+
+.ticket-color{
+    height: 1rem;
+}
+.ticket-id{
+    height: 1.5rem;
+    font-size: 0.75rem;
+    color: #6d6a6a;
+    font-weight: 600;
+    font-family: 'Courier New';
+    padding: 2px;
+}
+.task-area{
+    height: 7.5rem;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-family: 'Helvetica';
+}
+
+/* Modal  */
+.modal-cont{
+    height: 50vh;;
+    width: 50vw;
+    position: fixed;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid gray;
+    display: none;
+
+}
+/* Task Area  */
+.textbox-area{
+    height: 100%;
+    width: 80%;
+    font-size: 2rem;
+    color: #6d6a6a; 
+    resize: none;
+    outline: none;
+    padding: 2rem;
+}
+/* Priority Colour Container  */
+.color-cont{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: beige;
+    border-left: 2px solid gray;
+
+}
+.color-select{
+    height: 2.75rem;
+    width: 5rem;
+}
+
+.active{
+    border: 5px solid yellow;
+}
+.ticket-lock{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
